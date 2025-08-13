@@ -25,8 +25,42 @@ export default {
     </li>
 </template>
 
-<style>
+<style scoped>
+li {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+input[type="checkbox"] {
+  margin-right: 12px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+span {
+  flex: 1;
+  transition: color 0.3s;
+}
+
 .done {
-    text-decoration: line-through;
+  color: #888;
+}
+
+button {
+  background: none;
+  border: none;
+  color: #ff5a5f;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px;
+  margin-left: 10px;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+button:hover {
+  opacity: 1;
 }
 </style>
